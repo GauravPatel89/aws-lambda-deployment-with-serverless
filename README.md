@@ -1,1 +1,1 @@
-# aws_lambda_deployment_with_serverless
+# aws-lambda-deployment-with-serverless

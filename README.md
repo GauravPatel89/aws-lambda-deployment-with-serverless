@@ -78,4 +78,6 @@ Now we will use Serverless to deploy our deployment package as Lambda Layer. Ste
       - Deploy Lambda function
         
               serverless deploy
+              
+       You can find files explained above [here.](https://github.com/GauravPatel89/aws-lambda-deployment-with-serverless/tree/main/gp-pytorch-layer-test)              
 

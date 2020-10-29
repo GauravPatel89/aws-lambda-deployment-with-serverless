@@ -38,7 +38,7 @@ In this step we create deployment zip file containing python packages we want to
 
    Now our deployment package is ready.
     
-**2. Create Lambda Layer**
+**2. Create Lambda Layer**  
 Now we will use Serverless to deploy our deployment package as Lambda Layer. Steps are given below.
 
    - Create an empty Serverless package. 
@@ -59,7 +59,7 @@ Now we will use Serverless to deploy our deployment package as Lambda Layer. Ste
     
 **3. Example Lambda function utilizing our Lambda Layer**
 
-      Now we will make use of deployed Lambda layer in an example Lambda function.
+   Now we will make use of deployed Lambda layer in an example Lambda function.
 
    - Create an empty Serverless package  
         

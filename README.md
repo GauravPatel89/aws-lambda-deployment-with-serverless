@@ -34,9 +34,9 @@ In this step we create deployment zip file containing python packages we want to
           mv .requirements.zip requirements.zip
           zip torchLayerPackages.zip requirements.zip
           
-    You can find files explained above [here.](https://github.com/GauravPatel89/aws-lambda-deployment-with-serverless/tree/main/gp-pytorch-dependency-package)
+   You can find files explained above [here.](https://github.com/GauravPatel89/aws-lambda-deployment-with-serverless/tree/main/gp-pytorch-dependency-package)
 
-    Now our deployment package is ready.
+   Now our deployment package is ready.
     
 **2. Create Lambda Layer**
 Now we will use Serverless to deploy our deployment package as Lambda Layer. Steps are given below.
@@ -53,9 +53,9 @@ Now we will use Serverless to deploy our deployment package as Lambda Layer. Ste
     
           serverless deploy
 
-    The layer we have deployed above has pytorch 1.5.1, torch vision 0.6.1, Pillow and its dependencies. We have made this layer global so anyone with its ARN can use it. How to use it in your application is shown in next step. 
+   The layer we have deployed above has pytorch 1.5.1, torch vision 0.6.1, Pillow and its dependencies. We have made this layer global so anyone with its ARN can use it. How to use it in your application is shown in next step. 
     
-    You can find files explained above [here.](https://github.com/GauravPatel89/aws-lambda-deployment-with-serverless/tree/main/gp-pytorch-lambda-layer)
+   You can find files explained above [here.](https://github.com/GauravPatel89/aws-lambda-deployment-with-serverless/tree/main/gp-pytorch-lambda-layer)
     
 **3. Example Lambda function utilizing our Lambda Layer**
 

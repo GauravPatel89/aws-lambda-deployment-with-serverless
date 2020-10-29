@@ -1,10 +1,10 @@
 # aws-lambda-deployment-with-serverless
 
-This repository contains example files on deploying pytorch based application to AWS Lambda using Serverless framework. For detailed explaination refer to this [blog](https://gaurav4664.medium.com/how-to-speed-up-aws-lambda-deployment-on-serverless-framework-by-leveraging-lambda-layers-623f7c742af4). 
+This repository contains example files on deploying pytorch based application to AWS Lambda using Serverless framework. For detailed explanation refer to this [blog](https://gaurav4664.medium.com/how-to-speed-up-aws-lambda-deployment-on-serverless-framework-by-leveraging-lambda-layers-623f7c742af4). 
 
 Entire deployment procedure consists of deployment of static dependencies as Lambda layer and application code as Lambda function. It has been described below.
 
-1. Create Deployment Package  
+**1. Create Deployment Package**
 In this step we create deployment zip file containing python packages we want to deploy on our AWS Lambda Layer. Steps are as follows.
 
     - Create an empty Serverless package
@@ -38,7 +38,7 @@ In this step we create deployment zip file containing python packages we want to
 
     Now our deployment package is ready.
     
-2. Create Lambda Layer  
+**2. Create Lambda Layer**
 Now we will use Serverless to deploy our deployment package as Lambda Layer. Steps are given below.
 
     - Create an empty Serverless package. 
@@ -57,7 +57,7 @@ Now we will use Serverless to deploy our deployment package as Lambda Layer. Ste
     
     You can find files explained above [here.](https://github.com/GauravPatel89/aws-lambda-deployment-with-serverless/tree/main/gp-pytorch-lambda-layer)
     
-3. Example Lambda function utilizing our Lambda Layer.
+**3. Example Lambda function utilizing our Lambda Layer**
 
       Now we will make use of deployed Lambda layer in an example Lambda function.
 
